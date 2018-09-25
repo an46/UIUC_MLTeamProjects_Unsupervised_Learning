@@ -55,10 +55,10 @@ def plotKmeansOptimal(k,result):
     #
     import matplotlib.pyplot as plt
     plt.scatter(result[:,0],result[:,1], c=y_kmeans1)
-
     # cluster centers
     centers=km1.cluster_centers_
     plt.scatter(centers[:,0],centers[:,1], c='red')
+    plt.title("K-Means Clustering with 5 clusters")
     plt.savefig('clustering_optimal.png')
 
 
@@ -80,6 +80,7 @@ def plotKmeansAccount(k, result):
     # cluster centers
     centers=km2.cluster_centers_
     plt.scatter(centers[:,0],centers[:,1], c='red')
+    plt.title("K-Means Clustering with 16 clusters")
     plt.savefig('clustering.png')
 
 

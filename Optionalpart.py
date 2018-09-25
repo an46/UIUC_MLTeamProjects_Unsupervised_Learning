@@ -49,6 +49,8 @@ def Kcluster(result):
     import matplotlib.pyplot as plt
     plt.scatter(range(1,11),wcc)
     plt.title("Elbow Method")
+    plt.xlabel("Number of Clusters")
+    plt.ylabel("Within cluster sum of squares")
     plt.savefig('Elbow.png')
 
 
